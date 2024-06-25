@@ -17,7 +17,8 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-
+use Illuminate\Validation\Rules\Unique;
+use Filament\Facades\Filament;
 class RoleResource extends Resource implements HasShieldPermissions
 {
     protected static ?string $recordTitleAttribute = 'name';
